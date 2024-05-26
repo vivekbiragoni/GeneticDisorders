@@ -35,6 +35,9 @@ This document summarizes the process and results of training a YOLOv8 classifica
 - **Test Set:** 590 images
 - **Classes:** 4
 
+  
+![image](https://github.com/vivekbiragoni/GeneticDisorders/assets/104636857/1ed9bbef-dd9c-428f-a0bb-980007927eb7)
+
 ### Training Logs
 
 #### Epoch-wise Performance
@@ -46,6 +49,9 @@ This document summarizes the process and results of training a YOLOv8 classifica
 | 21    | 0.871          | 1.000          | 0.212      | 0.881           |
 | ...   | ...            | ...            | ...        | ...             |
 | 30    | 0.886          | 1.000          | 0.17     | 0.877             |
+
+![image](https://github.com/vivekbiragoni/GeneticDisorders/assets/104636857/daece2dd-4888-48e1-b0e8-5cfef5a1efe0)
+![image](https://github.com/vivekbiragoni/GeneticDisorders/assets/104636857/62d5fc24-709e-44da-89f1-9922bafca56c)
 
 #### Loss and Accuracy Trends
 
