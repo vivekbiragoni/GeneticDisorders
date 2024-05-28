@@ -9,7 +9,7 @@ import torch
 from PIL import Image
 from torch.utils.data import dataloader, distributed
 
-from ultralytics.data.dataset import GroundingDataset, YOLODataset, YOLOMultiModalDataset
+
 from ultralytics.data.loaders import (
     LOADERS,
     LoadImagesAndVideos,
@@ -79,50 +79,6 @@ def seed_worker(worker_id):  # noqa
     worker_seed = torch.initial_seed() % 2**32
     np.random.seed(worker_seed)
     random.seed(worker_seed)
-
-
-def build_yolo_dataset(cfg, img_path, batch, data, mode="train", rect=False, stride=32, multi_modal=False):
-    """Build YOLO Dataset."""
-    dataset = YOLOMultiModalDataset if multi_modal else YOLODataset
-    return dataset(
-        img_path=img_path,
-        imgsz=cfg.imgsz,
-        batch_size=batch,
-        augment=mode == "train",  # augmentation
-        hyp=cfg,  # TODO: probably add a get_hyps_from_cfg function
-        rect=cfg.rect or rect,  # rectangular batches
-        cache=cfg.cache or None,
-        single_cls=cfg.single_cls or False,
-        stride=int(stride),
-        pad=0.0 if mode == "train" else 0.5,
-        prefix=colorstr(f"{mode}: "),
-        task=cfg.task,
-        classes=cfg.classes,
-        data=data,
-        fraction=cfg.fraction if mode == "train" else 1.0,
-    )
-
-
-def build_grounding(cfg, img_path, json_file, batch, mode="train", rect=False, stride=32):
-    """Build YOLO Dataset."""
-    return GroundingDataset(
-        img_path=img_path,
-        json_file=json_file,
-        imgsz=cfg.imgsz,
-        batch_size=batch,
-        augment=mode == "train",  # augmentation
-        hyp=cfg,  # TODO: probably add a get_hyps_from_cfg function
-        rect=cfg.rect or rect,  # rectangular batches
-        cache=cfg.cache or None,
-        single_cls=cfg.single_cls or False,
-        stride=int(stride),
-        pad=0.0 if mode == "train" else 0.5,
-        prefix=colorstr(f"{mode}: "),
-        task=cfg.task,
-        classes=cfg.classes,
-        fraction=cfg.fraction if mode == "train" else 1.0,
-    )
-
 
 def build_dataloader(dataset, batch, workers, shuffle=True, rank=-1):
     """Return an InfiniteDataLoader or DataLoader for training or validation set."""

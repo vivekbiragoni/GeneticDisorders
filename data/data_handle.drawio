@@ -1,0 +1,121 @@
+<mxfile host="65bd71144e">
+    <diagram id="jkyO_WvUEe0aRVjoGL2a" name="Page-1">
+        <mxGraphModel dx="918" dy="489" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;div&gt;dataset.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(classificationDataset)&lt;/div&gt;&lt;div&gt;class&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="190" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="augment.py&lt;br&gt;&lt;div style=&quot;color: rgb(230, 237, 243); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13.5px; line-height: 23px;&quot;&gt;&lt;span style=&quot;color: #d2a8ff;&quot;&gt;classify_transforms for inferences&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(230, 237, 243); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13.5px; line-height: 23px;&quot;&gt;&lt;div style=&quot;line-height: 23px;&quot;&gt;&lt;span style=&quot;color: #d2a8ff;&quot;&gt;classify_augmentations for training&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="80" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;span style=&quot;background-color: rgb(13, 13, 13);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot; color=&quot;#ffffff&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;loader.py&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Provides various data loaders for different types of input data&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="162.5" y="300" width="157.5" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="3" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="310" as="sourcePoint"/>
+                        <mxPoint x="400" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="280" as="sourcePoint"/>
+                        <mxPoint x="430" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="&lt;span style=&quot;background-color: rgb(13, 13, 13);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot; color=&quot;#ffffff&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;build.py&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Builds data loaders for training or validation sets&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="162.5" y="410" width="157.5" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="5" target="9">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="280" as="sourcePoint"/>
+                        <mxPoint x="430" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="&lt;b&gt;&lt;u&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Data Handling&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#FFFFFF;fillColor=none;fontSize=10;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="40" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Start" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="20" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="13" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="280" as="sourcePoint"/>
+                        <mxPoint x="510" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="240" y="40"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="" style="endArrow=classic;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="9">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="280" as="sourcePoint"/>
+                        <mxPoint x="400" y="448" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="&lt;span style=&quot;background-color: rgb(13, 13, 13);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot; color=&quot;#ffffff&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Preprocess Batch&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;Preprocesses a batch of images and classes.&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="410" width="157.5" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;span style=&quot;background-color: rgb(13, 13, 13);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot; color=&quot;#ffffff&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Training Loop&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Executes the training loop, updating progress, and logging metrics..&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="300" width="157.5" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;Validation&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;validates the trained model&lt;/div&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="170" width="157.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Plot metrics&#10;evelaute" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="170" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="18" target="19">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="290" as="sourcePoint"/>
+                        <mxPoint x="510" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=classic;html=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="19" target="20">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="290" as="sourcePoint"/>
+                        <mxPoint x="510" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=classic;html=1;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="17" target="18">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="290" as="sourcePoint"/>
+                        <mxPoint x="510" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="Front End" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=12;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="277.5" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Use React Js&amp;nbsp;" style="text;strokeColor=#FFFFFF;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="24">
+                    <mxGeometry y="30" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Use ultralyitcs API" style="text;strokeColor=#FFFFFF;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="24">
+                    <mxGeometry y="60" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="allow live image captures" style="text;strokeColor=#FFFFFF;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="24">
+                    <mxGeometry y="90" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Iterate" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="665" y="440" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=classic;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="27" target="30">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="280" as="sourcePoint"/>
+                        <mxPoint x="700" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=classic;html=1;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.468;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;rounded=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="20" target="24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="280" as="sourcePoint"/>
+                        <mxPoint x="570" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="694" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
